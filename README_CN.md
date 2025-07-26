@@ -37,7 +37,7 @@
 ## 📦 安装使用
 
 ### 方式一：下载预编译版本
-1. 从 [Releases](https://github.com/your-username/frpc-gui-manager/releases) 下载最新版本
+1. 从 [Releases](https://github.com/hyper-fa/frpc_manager/releases) 下载最新版本
 2. 解压到任意目录
 3. 运行 `frpc-gui-manager.exe`
 
