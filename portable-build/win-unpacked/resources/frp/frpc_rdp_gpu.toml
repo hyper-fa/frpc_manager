@@ -1,0 +1,21 @@
+serverAddr = "120.46.90.102"
+serverPort = 18_997
+visitors = [ ]
+
+[auth]
+method = "token"
+token = "60d8a83c544e6168db"
+
+[webServer]
+addr = "0.0.0.0"
+port = 7_401
+user = "frpc_user"
+password = "HxzWLL6CjHz358ZL"
+pprofEnable = false
+
+[[proxies]]
+name = "rdp_gpu"
+type = "xtcp"
+localIP = "127.0.0.1"
+localPort = 3_389
+secretKey = "abcdefgh"

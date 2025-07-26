@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>创建图标</title>
+</head>
+<body>
+    <h2>FRP 管理器图标生成器</h2>
+    <canvas id="iconCanvas" width="256" height="256" style="border: 1px solid #ccc;"></canvas>
+    <br><br>
+    <button onclick="downloadIcon()">下载为 PNG</button>
+    
+    <script>
+        const canvas = document.getElementById('iconCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // 绘制图标
+        function drawIcon() {
+            // 背景圆形
+            ctx.fillStyle = '#4F46E5';
+            ctx.beginPath();
+            ctx.arc(128, 128, 120, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // 边框
+            ctx.strokeStyle = '#3730A3';
+            ctx.lineWidth = 4;
+            ctx.stroke();
+            
+            // 服务器图标
+            ctx.fillStyle = 'white';
+            ctx.fillRect(60, 80, 40, 30);
+            
+            // 服务器线条
+            ctx.fillStyle = '#4F46E5';
+            for (let i = 0; i < 4; i++) {
+                ctx.fillRect(65, 85 + i * 5, 30, 3);
+            }
+            
+            // 客户端图标
+            ctx.fillStyle = 'white';
+            ctx.fillRect(156, 80, 40, 30);
+            
+            // 客户端线条
+            ctx.fillStyle = '#4F46E5';
+            for (let i = 0; i < 4; i++) {
+                ctx.fillRect(161, 85 + i * 5, 30, 3);
+            }
+            
+            // 连接线
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(100, 95);
+            ctx.lineTo(156, 95);
+            ctx.stroke();
+            
+            // 中心点
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(128, 95, 4, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // 箭头
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.moveTo(140, 90);
+            ctx.lineTo(150, 95);
+            ctx.lineTo(140, 100);
+            ctx.closePath();
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.moveTo(116, 90);
+            ctx.lineTo(106, 95);
+            ctx.lineTo(116, 100);
+            ctx.closePath();
+            ctx.fill();
+            
+            // 文字
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('FRP', 128, 150);
+            
+            ctx.font = '12px Arial';
+            ctx.fillText('Manager', 128, 175);
+        }
+        
+        function downloadIcon() {
+            const link = document.createElement('a');
+            link.download = 'icon.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // 绘制图标
+        drawIcon();
+    </script>
+</body>
+</html>

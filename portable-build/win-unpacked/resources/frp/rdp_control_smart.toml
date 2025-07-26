@@ -1,0 +1,14 @@
+serverAddr = "120.46.90.102"
+serverPort = 18_997
+
+[auth]
+method = "token"
+token = "60d8a83c544e6168db"
+
+[[visitors]]
+name = "rdp_control_smart"
+type = "xtcp"
+serverName = "rdp_smart"
+bindPort = 4_389
+secretKey = "abcdefgh"
+keepTunnelOpen = true

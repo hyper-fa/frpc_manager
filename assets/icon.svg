@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="128" cy="128" r="120" fill="#4F46E5" stroke="#3730A3" stroke-width="4"/>
+  
+  <!-- 网络连接图标 -->
+  <g fill="white">
+    <!-- 服务器图标 -->
+    <rect x="60" y="80" width="40" height="30" rx="4" fill="white"/>
+    <rect x="65" y="85" width="30" height="3" fill="#4F46E5"/>
+    <rect x="65" y="90" width="30" height="3" fill="#4F46E5"/>
+    <rect x="65" y="95" width="30" height="3" fill="#4F46E5"/>
+    <rect x="65" y="100" width="30" height="3" fill="#4F46E5"/>
+    
+    <!-- 客户端图标 -->
+    <rect x="156" y="80" width="40" height="30" rx="4" fill="white"/>
+    <rect x="161" y="85" width="30" height="3" fill="#4F46E5"/>
+    <rect x="161" y="90" width="30" height="3" fill="#4F46E5"/>
+    <rect x="161" y="95" width="30" height="3" fill="#4F46E5"/>
+    <rect x="161" y="100" width="30" height="3" fill="#4F46E5"/>
+    
+    <!-- 连接线 -->
+    <line x1="100" y1="95" x2="156" y2="95" stroke="white" stroke-width="3"/>
+    <circle cx="128" cy="95" r="4" fill="white"/>
+    
+    <!-- 箭头 -->
+    <polygon points="140,90 150,95 140,100" fill="white"/>
+    <polygon points="116,90 106,95 116,100" fill="white"/>
+    
+    <!-- FRP 文字 -->
+    <text x="128" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">FRP</text>
+    <text x="128" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Manager</text>
+  </g>
+</svg>

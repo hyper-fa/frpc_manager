@@ -1,0 +1,26 @@
+serverAddr = "120.46.90.102"
+serverPort = 18997
+
+auth.method = "token"
+auth.token = "60d8a83c544e6168db"
+
+webServer.addr = "0.0.0.0"
+webServer.port = 7401
+webServer.user = "frpc_user"
+webServer.password = "HxzWLL6CjHz358ZL"
+webServer.pprofEnable = false
+
+
+# tls
+#transport.tls.certFile = "/etc/frp/ssl/client.crt"
+#transport.tls.keyFile = "/etc/frp/ssl/client.key"
+#transport.tls.trustedCaFile = "/etc/frp/ssl/ca.crt"
+
+[[proxies]]
+name = "rdp"
+type = "xtcp"
+localIP = "127.0.0.1"
+localPort = 3389
+
+# 只有共享密钥 (secretKey) 与服务器端一致的用户才能访问该服务
+secretKey = "abcdefgh"
