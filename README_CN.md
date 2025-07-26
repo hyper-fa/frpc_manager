@@ -1,5 +1,7 @@
 # FRP 客户端管理器
 
+[English](README.md) | 中文说明
+
 一个现代化的 FRP (Fast Reverse Proxy) 客户端图形界面管理工具，基于 Electron + React + TypeScript 构建。
 
 ## 🌟 功能特性
@@ -174,8 +176,10 @@ npm run lint         # 代码检查
 
 如果您遇到问题或有建议，请：
 - 提交 [Issue](https://github.com/your-username/frpc-gui-manager/issues)
-- 发送邮件至：your-email@example.com
+- 发送邮件至：fusion.ai726@gmail.com
 
 ---
 
 ⭐ 如果这个项目对您有帮助，请给它一个星标！
+
+

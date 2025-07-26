@@ -1,5 +1,7 @@
 # FRP Client Manager
 
+[中文说明](README_CN.md) | English
+
 A modern GUI management tool for FRP (Fast Reverse Proxy) client, built with Electron + React + TypeScript.
 
 ## 🌟 Features
@@ -174,8 +176,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter issues or have suggestions, please:
 - Submit an [Issue](https://github.com/your-username/frpc-gui-manager/issues)
-- Send email to: your-email@example.com
+- Send email to: fusion.ai726@gmail.com
 
 ---
 
 ⭐ If this project helps you, please give it a star!
+
+
