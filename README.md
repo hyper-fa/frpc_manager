@@ -37,7 +37,7 @@ A modern GUI management tool for FRP (Fast Reverse Proxy) client, built with Ele
 ## 📦 Installation & Usage
 
 ### Option 1: Download Pre-built Version
-1. Download the latest version from [Releases](https://github.com/your-username/frpc-gui-manager/releases)
+1. Download the latest version from [Releases]([https://github.com/hyper-fa/frpc_manager/releases)])
 2. Extract to any directory
 3. Run `frpc-gui-manager.exe`
 
